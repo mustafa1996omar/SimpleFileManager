@@ -19,15 +19,16 @@ std::string ReplaceAll(std::string str, const std::string &from, const std::stri
 void displayHelp()
 {
     std::cout << "Available commands:" << std::endl;
-    std::cout << "  help          - Display this help message." << std::endl;
-    std::cout << "  create [file] - Create a new empty file." << std::endl;
-    std::cout << "  delete [file] - Delete a specified file." << std::endl;
+    std::cout << "  help               - Display this help message." << std::endl;
+    std::cout << "  create [file]      - Create a new empty file." << std::endl;
+    std::cout << "  delete [file]      - Delete a specified file." << std::endl;
     std::cout << "  rename [old] [new] - Rename a file from old name to new name." << std::endl;
     std::cout << "  move [file] [dir]  - Move a specified file to a target directory." << std::endl;
     std::cout << "  copy [file] [dir]  - Copy a specified file to a target directory." << std::endl;
-    std::cout << "  mkdir [dir]  - Create a new directory." << std::endl;
-    std::cout << "  rmdir [dir]  - Remove a directory (and its contents if specified)." << std::endl;
-    std::cout << "  cd [dir]      - Change the current directory.\nType the command followed by the required parameters." << std::endl;
+    std::cout << "  mkdir [dir]        - Create a new directory." << std::endl;
+    std::cout << "  rmdir [dir]        - Remove a directory (and its contents if specified)." << std::endl;
+    std::cout << "  ls                 - List files and directories in the current directory." << std::endl;
+    std::cout << "  cd [dir]           - Change the current directory.\nType the command followed by the required parameters." << std::endl;
 }
 
 void createFile(const std::string &fileName)
